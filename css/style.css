@@ -1,0 +1,48 @@
+/* Global styles */
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+a:visited {
+    color: orange;
+}
+
+table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    border: 1px solid gray;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: gray;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(70, 70, 70);
+}
+
+tr:hover {
+    background-color: #6ca95a;
+}

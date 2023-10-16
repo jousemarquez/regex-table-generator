@@ -1,0 +1,219 @@
+{
+    "regexTypes": [
+        {
+            "name": "Punto (.)",
+            "description": "Cualquier caracter excepto terminadores de línea",
+            "example": "/./"
+        },
+        {
+            "name": "Dígito (\\d)",
+            "description": "Busca cualquier dígito (número arábigo)",
+            "example": "/\\d/"
+        },
+        {
+            "name": "No Dígito (\\D)",
+            "description": "Busca cualquier caracter que no sea un dígito",
+            "example": "/\\D/"
+        },
+        {
+            "name": "Carácter de Palabra (\\w)",
+            "description": "Busca cualquier caracter alfanumérico del alfabeto latino básico",
+            "example": "/\\w/"
+        },
+        {
+            "name": "No Carácter de Palabra (\\W)",
+            "description": "Busca cualquier caracter que no sea un caracter de palabra del alfabeto latino básico",
+            "example": "/\\W/"
+        },
+        {
+            "name": "Espacio en Blanco (\\s)",
+            "description": "Busca un solo caracter de espacio en blanco",
+            "example": "/\\s/"
+        },
+        {
+            "name": "No Espacio en Blanco (\\S)",
+            "description": "Busca un solo caracter que no sea un espacio en blanco",
+            "example": "/\\S/"
+        },
+        {
+            "name": "Tabulación Horizontal (\\t)",
+            "description": "Coincide con una tabulación horizontal",
+            "example": "/\\t/"
+        },
+        {
+            "name": "Retorno de Carro (\\r)",
+            "description": "Coincide con un retorno de carro",
+            "example": "/\\r/"
+        },
+        {
+            "name": "Salto de Línea (\\n)",
+            "description": "Coincide con un salto de línea",
+            "example": "/\\n/"
+        },
+        {
+            "name": "Tabulación Vertical (\\v)",
+            "description": "Coincide con una tabulación vertical",
+            "example": "/\\v/"
+        },
+        {
+            "name": "Avance de Página (\\f)",
+            "description": "Coincide con un caracter de avance de página",
+            "example": "/\\f/"
+        },
+        {
+            "name": "Retroceso ([\\b])",
+            "description": "Coincide con un caracter de retroceso",
+            "example": "/[\\b]/"
+        },
+        {
+            "name": "Caracter NUL (\\0)",
+            "description": "Coincide con un caracter NUL",
+            "example": "/\\0/"
+        },
+        {
+            "name": "Caracter de Control (\\cX)",
+            "description": "Coincide con un caracter de control usando notación de acento circunflejo",
+            "example": "/\\cM/"
+        },
+        {
+            "name": "Caracter Hexadecimal (\\xhh)",
+            "description": "Busca el caracter con el código hh (dos dígitos hexadecimales)",
+            "example": "/\\x41/"
+        },
+        {
+            "name": "Caracter UTF-16 (\\uhhhh)",
+            "description": "Busca una unidad de código UTF-16 con el valor hhhh (cuatro dígitos hexadecimales)",
+            "example": "/\\u03A9/"
+        },
+        {
+            "name": "Caracter Unicode (\\u{hhhh})",
+            "description": "Busca el caracter con el valor Unicode U+hhhh o U+hhhhh (dígitos hexadecimales)",
+            "example": "/\\u{1F602}/"
+        },
+        {
+            "name": "Escape (\\)",
+            "description": "Indica que el siguiente caracter se debe tratar de manera especial o 'escaparse'",
+            "example": "/\\/"
+        },
+        {
+            "name": "Comienzo de Línea (^)",
+            "description": "Coincide con el comienzo de la entrada",
+            "example": "/^A/"
+        },
+        {
+            "name": "Fin de Línea ($)",
+            "description": "Coincide con el final de la entrada",
+            "example": "/e$/"
+        },
+        {
+            "name": "Límite de Palabra (\\b)",
+            "description": "Marca el límite de una palabra",
+            "example": "/\\b/"
+        },
+        {
+            "name": "No Límite de Palabra (\\B)",
+            "description": "Coincide con un límite sin palabra",
+            "example": "/\\B/"
+        },
+        {
+            "name": "Aserción Anticipada (?=y)",
+            "description": "Aserción anticipada: Coincide con 'x' solo si 'x' va seguida de 'y'",
+            "example": "/x(?=y)/"
+        },
+        {
+            "name": "Aserción de Búsqueda Anticipada Negativa (?!y)",
+            "description": "Aserción de búsqueda anticipada negativa: reconoce la 'x' solo si la 'x' no va seguida de 'y'",
+            "example": "/x(?!y)/"
+        },
+        {
+            "name": "Aserción de Búsqueda Inversa (?<=y)x",
+            "description": "Aserción de búsqueda inversa: encontrará 'x' solo si 'x' está precedida por 'y'",
+            "example": "/(?<=y)x/"
+        },
+        {
+            "name": "Aserción de Búsqueda Inversa Negativa (?<!y)x",
+            "description": "Aserción de búsqueda inversa negativa: Reconoce la 'x' solo si 'x' no está precedida por 'y'",
+            "example": "/(?<!y)x/"
+        },
+        {
+            "name": "Grupo de Captura (x)",
+            "description": "Grupo de captura: Encuentra la 'x' y la recuerda",
+            "example": "/(foo)/"
+        },
+        {
+            "name": "Referencia Posterior (\\n)",
+            "description": "Donde 'n' es un número entero positivo. Una referencia posterior a la última subcadena que coincide con el paréntesis 'n' en la expresión regular",
+            "example": "/(\\d)\\1/"
+        },
+        {
+            "name": "Captura Nombrada (?<Name>x)",
+            "description": "Grupo de captura nombrado: reconoce la 'x' y la almacena bajo el nombre especificado por <Name>",
+            "example": "/(?<name>\\d)/"
+        },
+        {
+            "name": "Grupo sin Captura (?:x)",
+            "description": "Grupo sin captura: reconoce la 'x' pero no recuerda el resultado",
+            "example": "/(?:x)/"
+        },
+        {
+            "name": "Cuantificador de Cero o Más (x*)",
+            "description": "Concuerda 0 o más veces con el elemento 'x' anterior",
+            "example": "/bo*/"
+        },
+        {
+            "name": "Cuantificador de Uno o Más (x+)",
+            "description": "Encuentra 1 o más veces el elemento 'x' anterior",
+            "example": "/a+/"
+        },
+        {
+            "name": "Cuantificador de Cero o Uno (x?)",
+            "description": "Halla 0 o 1 vez el elemento 'x' anterior",
+            "example": "/e?/"
+        },
+        {
+            "name": "Cuantificador de Conteo Exacto (x{n})",
+            "description": "Concuerda exactamente 'n' apariciones del elemento 'x' anterior",
+            "example": "/a{2}/"
+        },
+        {
+            "name": "Cuantificador de Al Menos (x{n,})",
+            "description": "Concuerda con al menos 'n' apariciones del elemento 'x'",
+            "example": "/a{2,}/"
+        },
+        {
+            "name": "Cuantificador de Rango (x{n,m})",
+            "description": "Concuerda por lo menos 'n' y como máximo 'm' apariciones del elemento 'x' anterior",
+            "example": "/a{1,3}/"
+        },
+        {
+            "name": "Cuantificador de No Codicioso (x*?)",
+            "description": "Hace que el cuantificador sea no codicioso (reconoce el número mínimo de veces)",
+            "example": "/a*?/"
+        },
+        {
+            "name": "Cuantificador de No Codicioso (x+?)",
+            "description": "Hace que el cuantificador sea no codicioso (reconoce el número mínimo de veces)",
+            "example": "/a+?/"
+        },
+        {
+            "name": "Cuantificador de No Codicioso (x??)",
+            "description": "Hace que el cuantificador sea no codicioso (reconoce el número mínimo de veces)",
+            "example": "/e??/"
+        },
+        {
+            "name": "Cuantificador de No Codicioso (x{n}?)",
+            "description": "Hace que el cuantificador sea no codicioso (reconoce el número mínimo de veces)",
+            "example": "/a{2}?/"
+        },
+        {
+            "name": "Cuantificador de No Codicioso (x{n,}?)",
+            "description": "Hace que el cuantificador sea no codicioso (reconoce el número mínimo de veces)",
+            "example": "/a{2,}?/"
+        },
+        {
+            "name": "Cuantificador de No Codicioso (x{n,m}?)",
+            "description": "Hace que el cuantificador sea no codicioso (reconoce el número mínimo de veces)",
+            "example": "/a{1,3}?/"
+        }
+    ]
+}
